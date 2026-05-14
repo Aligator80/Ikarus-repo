@@ -1,4 +1,5 @@
-﻿<addons>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
 
 
 <addon id="plugin.video.ikarus" name="Ikarus - WebShare" version="0.1.0" provider-name="Kokutek Robin">
@@ -37,11 +38,15 @@
   </extension>
 </addon>
 
-<addon id="repository.ikarus" name="Ikarus Repository" version="1.0.0" provider-name="Kokutek Robin">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.ikarus" name="Ikarus Repository" version="1.0.1" provider-name="Kokutek Robin">
   <extension point="xbmc.addon.repository" name="Ikarus Repository">
-    <info compressed="false">https://aligator80.github.io/Ikarus-repo/addons.xml</info>
-    <checksum>https://aligator80.github.io/Ikarus-repo/addons.xml.md5</checksum>
-    <datadir zip="true">https://aligator80.github.io/Ikarus-repo/zips/</datadir>
+    <dir minversion="19.0.0">
+      <info compressed="false">https://aligator80.github.io/Ikarus-repo/addons.xml</info>
+      <checksum>https://aligator80.github.io/Ikarus-repo/addons.xml.md5</checksum>
+      <datadir zip="true">https://aligator80.github.io/Ikarus-repo/zips/</datadir>
+      <hashes>false</hashes>
+    </dir>
   </extension>
 
   <extension point="xbmc.addon.metadata">
@@ -55,6 +60,4 @@
     </assets>
   </extension>
 </addon>
-
 </addons>
-
