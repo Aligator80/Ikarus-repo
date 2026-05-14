@@ -1,0 +1,60 @@
+﻿<addons>
+
+
+<addon id="plugin.video.ikarus" name="Ikarus - WebShare" version="0.1.0" provider-name="Kokutek Robin">
+  <requires>
+    <!-- Kodi 19+ (Matrix/Nexus/Omega) -->
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="2.18.4"/>
+    <import addon="script.module.unidecode" version="0.4.16"/>
+    <import addon="script.module.beautifulsoup4" version="4.0.0" />
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="main.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.service" library="resources/lib/service_downloads.py" start="startup" />
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="cs_CZ">Yet Another Webshare Plugin</summary>
+    <summary lang="en_GB">Yet Another Webshare Plugin</summary>
+
+    <description lang="cs_CZ">Plugin je pouze procházeč veřejně dostupného webu. Nezodpovídám za obsah poskytovaný tímto webem.</description>
+    <description lang="en_GB">This add-on only simulates browsing a publicly available website. I’m not responsible for the content provided by that site.</description>
+
+    <disclaimer lang="en_GB">The plugin does not provide any content, it is only a simulation of the browser of a publicly available web site. I am not responsible for the content provided by this site.</disclaimer>
+    <disclaimer lang="sk_SK">Plugin neposkytuje žiaden obsah, je to len simulácia prehliadača verejne dostupnej web stránky. Nie som zodpovedný za obsah, ktorý táto stránka poskytuje.</disclaimer>
+    <disclaimer lang="cs_CZ">Plugin neposkytuje žádný obsah, je to jen simulace prohlížeče veřejně dostupné web stránky. Nejsem zodpovědný za obsah, který tato stránka poskytuje.</disclaimer>
+
+    <platform>all</platform>
+    <license>AGPL 3.0</license>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <news>[B]0.1.0[/B] - první zkušební verze</news>
+  </extension>
+</addon>
+
+<addon id="repository.ikarus" name="Ikarus Repository" version="1.0.0" provider-name="Kokutek Robin">
+  <extension point="xbmc.addon.repository" name="Ikarus Repository">
+    <info compressed="false">https://aligator80.github.io/Ikarus-repo/addons.xml</info>
+    <checksum>https://aligator80.github.io/Ikarus-repo/addons.xml.md5</checksum>
+    <datadir zip="true">https://aligator80.github.io/Ikarus-repo/zips/</datadir>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="cs_CZ">Repozitar pro Ikarus plugin</summary>
+    <summary lang="en_GB">Repository for the Ikarus plugin</summary>
+    <description lang="cs_CZ">Kodi repozitar pro automaticke aktualizace pluginu Ikarus.</description>
+    <description lang="en_GB">Kodi repository for automatic updates of the Ikarus plugin.</description>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+</addons>
+
