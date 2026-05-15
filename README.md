@@ -10,10 +10,16 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus` - `0.1.2`
+- `plugin.video.ikarus` - `0.1.3`
 - `repository.ikarus` - `1.0.1`
 
 ## Historie verzi
+
+### 0.1.3
+
+- Pridano tlacitko `Info o verzi` do nastaveni v sekci `Stahovani`.
+- Pridan prehled aktualni verze a zmen primo v nastaveni pluginu.
+- Do nastaveni doplnen viditelny radek s aktualni verzi pluginu.
 
 ### 0.1.2
 
