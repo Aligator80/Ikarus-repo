@@ -2,7 +2,7 @@
 <addons>
 
 
-<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.5" version="0.1.5" provider-name="Kokutek Robin">
+<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.6" version="0.1.6" provider-name="Kokutek Robin">
   <requires>
     <!-- Kodi 19+ (Matrix/Nexus/Omega) -->
     <import addon="xbmc.python" version="3.0.0"/>
@@ -34,7 +34,12 @@
       <icon>resources/icon.png</icon>
     </assets>
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news>[B]0.1.5[/B] - info o verzi přímo v nastavení
+    <news>[B]0.1.6[/B] - prehled verzi jako obsah nastaveni
+- Polozka Info o verzi zustava v levem menu nastaveni.
+- Po prepnuti na Info o verzi se prehled zobrazi rovnou v hlavni casti okna.
+- Prehled verzi je upraven do beznych radku nastaveni.
+
+[B]0.1.5[/B] - info o verzi přímo v nastavení
 - Informace o verzi se zobrazí hned po otevření položky Info o verzi.
 - Odstraněno extra tlačítko Zobrazit přehled verzí.
 - Přehled změn je vidět přímo uprostřed okna nastavení.
