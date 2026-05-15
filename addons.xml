@@ -2,7 +2,7 @@
 <addons>
 
 
-<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.6" version="0.1.6" provider-name="Kokutek Robin">
+<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.7" version="0.1.7" provider-name="Kokutek Robin">
   <requires>
     <!-- Kodi 19+ (Matrix/Nexus/Omega) -->
     <import addon="xbmc.python" version="3.0.0"/>
@@ -34,7 +34,12 @@
       <icon>resources/icon.png</icon>
     </assets>
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news>[B]0.1.6[/B] - prehled verzi jako obsah nastaveni
+    <news>[B]0.1.7[/B] - kontrola aktualizaci z pluginu
+- Pridana polozka Zkontrolovat aktualizace Ikarus v hlavnim menu pluginu.
+- Pridano tlacitko Zkontrolovat aktualizace do sekce Info o verzi.
+- Akce spousti Kodi kontrolu povolenych repozitaru.
+
+[B]0.1.6[/B] - prehled verzi jako obsah nastaveni
 - Polozka Info o verzi zustava v levem menu nastaveni.
 - Po prepnuti na Info o verzi se prehled zobrazi rovnou v hlavni casti okna.
 - Prehled verzi je upraven do beznych radku nastaveni.
