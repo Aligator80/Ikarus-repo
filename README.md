@@ -17,9 +17,11 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ### 0.1.1
 
-- Aktualizace pluginu po poslednich upravach.
-- Opraveno generovani `addons.xml`, aby repozitar neobsahoval vnitrni XML hlavicku.
-- Opraven upload skript pro spravne nacteni ulozeneho GitHub tokenu z Windows.
+- Upraveno navazani dalsi epizody u serialu z TMDB.
+- V nastaveni je nova volba `Pokracovat dalsi epizodou`: automaticke pokracovani nebo vyberovy dialog.
+- Vychozi rezim je automaticke spusteni dalsi epizody.
+- Pri potvrzeni dalsi epizody dialogem uz plugin zbytecne neukoncuje aktualni prehravani hned v 80 procentech.
+- Testovaci notifikace pro dalsi epizodu jsou ve vychozim stavu vypnute.
 
 ### 0.1.0
 
@@ -30,4 +32,3 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 1. Zvednout verzi v `plugin.video.ikarus/addon.xml`.
 2. Dopsat zmeny do sekce `Historie verzi` v tomto souboru.
 3. Spustit `ikarus-repo-tools/build_and_upload_repo.cmd`.
-
