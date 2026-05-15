@@ -10,10 +10,15 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus` - `0.1.1`
+- `plugin.video.ikarus` - `0.1.2`
 - `repository.ikarus` - `1.0.1`
 
 ## Historie verzi
+
+### 0.1.2
+
+- Opraveno zobrazeni aktualni verze a zmen primo v okne Verze v Kodi.
+- Do `addon.xml` byl doplnen prehled zmen, aby Kodi nezobrazovalo jen starsi zkusebni text.
 
 ### 0.1.1
 
