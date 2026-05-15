@@ -10,10 +10,16 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus` - `0.1.6`
+- `plugin.video.ikarus` - `0.1.7`
 - `repository.ikarus` - `1.0.1`
 
 ## Historie verzi
+
+### 0.1.7
+
+- Pridana polozka `Zkontrolovat aktualizace Ikarus` do hlavniho menu pluginu.
+- Pridano tlacitko `Zkontrolovat aktualizace` do sekce `Info o verzi`.
+- Akce spousti Kodi kontrolu povolenych repozitaru pres vestavenou funkci `UpdateAddonRepos`.
 
 ### 0.1.6
 
