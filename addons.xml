@@ -2,7 +2,7 @@
 <addons>
 
 
-<addon id="plugin.video.ikarus" name="Ikarus - WebShare" version="0.1.1" provider-name="Kokutek Robin">
+<addon id="plugin.video.ikarus" name="Ikarus - WebShare" version="0.1.2" provider-name="Kokutek Robin">
   <requires>
     <!-- Kodi 19+ (Matrix/Nexus/Omega) -->
     <import addon="xbmc.python" version="3.0.0"/>
@@ -34,7 +34,16 @@
       <icon>resources/icon.png</icon>
     </assets>
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news>[B]0.1.1[/B] - aktualizace pluginu</news>
+    <news>[B]0.1.2[/B] - oprava zobrazení verze a seznamu změn
+- V okně Verze se budou zobrazovat aktuální změny pluginu Ikarus.
+- Doplněn přehled změn podle changelogu.
+
+[B]0.1.1[/B] - navazování další epizody
+- Upraveno navázání další epizody u seriálů z TMDB.
+- V nastavení je nová volba Pokračovat další epizodou: automatické pokračování nebo výběrový dialog.
+- Výchozí režim je automatické spuštění další epizody.
+- Při potvrzení další epizody dialogem už plugin zbytečně neukončuje aktuální přehrávání hned v 80 procentech.
+- Testovací notifikace pro další epizodu jsou ve výchozím stavu vypnuté.</news>
   </extension>
 </addon>
 
