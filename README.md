@@ -10,10 +10,23 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus` - `0.1.7`
+- `plugin.video.ikarus` - `0.1.8`
 - `repository.ikarus` - `1.0.1`
 
 ## Historie verzi
+
+### 0.1.8
+
+- Oprava v nastaveni `Info o verzi` a kontrola aktualizace pluginu.
+- Opraveno razeni a pojmenovani nalezenych zdroju na WebShare.
+- WebShare zdroje se radi podle potvrzeneho audio jazyka: `CZ`, potom `SK`, potom `EN`, potom ostatni nebo nezname.
+- V ramci stejneho jazyka se radi podle kvality: `4K`, `1080p`, `720p` a nizsi kvality.
+- Pri stejne kvalite rozhoduje velikost souboru, vetsi soubor je vyse.
+- Interni `score` shody zustava zachovane pro ladeni a jako pomocne kriterium pri shode ostatnich hodnot.
+- Nazev WebShare zdroje se sklada z tagu jazyka, kvality a velikosti, napr. `[CZ][1080p][3.2 GB]`.
+- Pokud ma zdroj potvrzene `CZ` audio, zobrazi se za tagy cesky nazev filmu nebo serialu s rokem misto dlouheho nazvu souboru.
+- Pokud informace o souboru nejsou citelne nebo chybi, zobrazi se puvodni nazev souboru.
+- Totozne WebShare zdroje se seskupuji do slozky s poctem zdroju.
 
 ### 0.1.7
 
