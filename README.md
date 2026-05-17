@@ -10,10 +10,19 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus` - `0.1.9`
+- `plugin.video.ikarus` - `0.1.10`
 - `repository.ikarus` - `1.0.1`
 
 ## Historie verzi
+
+### 0.1.10
+
+- Pri spusteni pluginu se zobrazi informativni upozorneni s povinnym potvrzenim souhlasu.
+- Hlavni menu Ikarusu se spusti az po potvrzeni informativniho upozorneni.
+- Do nastaveni byla pridana volba `Uz nezobrazovat informativni text pri startu`.
+- V nastaveni je dostupne i rucni zobrazeni celeho informativniho textu.
+- Upozorneni ma vlastni interni verzi, takze ho lze pri nektere dalsi aktualizaci znovu vynutit.
+- Opraveno potvrzovaci okno pro Kodi 21, aby nezpusobovalo chybu pri startu pluginu.
 
 ### 0.1.9
 
