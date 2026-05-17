@@ -10,10 +10,22 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus` - `0.1.8`
+- `plugin.video.ikarus` - `0.1.9`
 - `repository.ikarus` - `1.0.1`
 
 ## Historie verzi
+
+### 0.1.9
+
+- Do ostatniho nastaveni pridany volby pro primarni audio stopu, sekundarni audio stopu a preferovane titulky.
+- Pri spusteni zdroje se plugin nejdrive pokusi prepnout na primarni audio jazyk.
+- Pokud primarni audio stopa neni dostupna, plugin zkusi sekundarni audio jazyk.
+- Pokud neni dostupna ani primarni ani sekundarni audio stopa, zdroj se ponecha s aktualni audio stopou.
+- Titulky se automaticky zapnou jen kdyz se lisi jazykova skupina prehravane audio stopy a preferovanych titulku.
+- Pokud prehravane audio patri mezi `CZ/SK` a preferovane titulky jsou `CZ/SK`, titulky se nezapnou.
+- Pokud je prehravane audio `EN` a preferovane titulky jsou `EN`, titulky se nezapnou.
+- Pokud zdroj nema primarni ani sekundarni audio stopu a obsahuje jinou audio stopu, plugin se vzdy pokusi zapnout preferovane titulky.
+- Pokud preferovane titulky ve zdroji nejsou dostupne, titulky zustanou vypnute.
 
 ### 0.1.8
 
