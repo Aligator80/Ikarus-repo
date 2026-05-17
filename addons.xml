@@ -2,7 +2,7 @@
 <addons>
 
 
-<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.8" version="0.1.8" provider-name="Kokutek Robin">
+<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.9" version="0.1.9" provider-name="Kokutek Robin">
   <requires>
     <!-- Kodi 19+ (Matrix/Nexus/Omega) -->
     <import addon="xbmc.python" version="3.0.0"/>
@@ -34,7 +34,20 @@
       <icon>resources/icon.png</icon>
     </assets>
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news>[B]0.1.8[/B] - razeni a pojmenovani WebShare zdroju
+    <news>[B]0.1.9[/B] - vyber audio stopy a titulku
+- Do ostatniho nastaveni pridany volby pro primarni audio stopu, sekundarni audio stopu a preferovane titulky.
+- Pri spusteni zdroje se plugin nejdrive pokusi prepnout na primarni audio jazyk.
+- Pokud primarni audio stopa neni dostupna, plugin zkusi sekundarni audio jazyk.
+- Pokud neni dostupna ani primarni ani sekundarni audio stopa, zdroj se ponecha s aktualni audio stopou.
+- Titulky se automaticky zapnou jen kdyz se lisi jazykova skupina prehravane audio stopy a preferovanych titulku.
+- Pokud prehravane audio patri mezi CZ/SK a preferovane titulky jsou CZ/SK, titulky se nezapnou.
+- Pokud je prehravane audio EN a preferovane titulky jsou EN, titulky se nezapnou.
+- Pokud zdroj nema primarni ani sekundarni audio stopu a obsahuje jinou audio stopu, plugin se vzdy pokusi zapnout preferovane titulky.
+- Pokud preferovane titulky ve zdroji nejsou dostupne, titulky zustanou vypnute.
+
+----------------------------------------
+
+[B]0.1.8[/B] - razeni a pojmenovani WebShare zdroju
 - Oprava v nastaveni Info o verzi a kontrola aktualizace pluginu.
 - Opraveno razeni nalezenych WebShare zdroju v TMDB knihovne.
 - WebShare zdroje se radi podle potvrzeneho audio jazyka: CZ, potom SK, potom EN a nakonec ostatni nebo nezname.
