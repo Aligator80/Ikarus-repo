@@ -2,7 +2,7 @@
 <addons>
 
 
-<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.9" version="0.1.9" provider-name="Kokutek Robin">
+<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.10" version="0.1.10" provider-name="Kokutek Robin">
   <requires>
     <!-- Kodi 19+ (Matrix/Nexus/Omega) -->
     <import addon="xbmc.python" version="3.0.0"/>
@@ -34,7 +34,16 @@
       <icon>resources/icon.png</icon>
     </assets>
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news>[B]0.1.9[/B] - vyber audio stopy a titulku
+    <news>[B]0.1.10[/B] - informativni upozorneni pri startu
+- Pri spusteni pluginu se zobrazi informativni upozorneni s povinnym potvrzenim souhlasu.
+- Hlavni menu Ikarusu se spusti az po potvrzeni informativniho upozorneni.
+- Do nastaveni byla pridana volba Uz nezobrazovat informativni text pri startu.
+- V nastaveni je dostupne i rucni zobrazeni celeho informativniho textu.
+- Upozorneni ma vlastni interni verzi, takze ho lze pri nektere dalsi aktualizaci znovu vynutit.
+
+----------------------------------------
+
+[B]0.1.9[/B] - vyber audio stopy a titulku
 - Do ostatniho nastaveni pridany volby pro primarni audio stopu, sekundarni audio stopu a preferovane titulky.
 - Pri spusteni zdroje se plugin nejdrive pokusi prepnout na primarni audio jazyk.
 - Pokud primarni audio stopa neni dostupna, plugin zkusi sekundarni audio jazyk.
