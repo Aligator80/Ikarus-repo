@@ -10,10 +10,20 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus` - `0.1.10`
+- `plugin.video.ikarus` - `0.1.11`
 - `repository.ikarus` - `1.0.1`
 
 ## Historie verzi
+
+### 0.1.11
+
+- Zpresneno hledani zdroju pro serialove epizody, aby obecny nazev epizody jako `Pilot` nespoustel shody s cizimi serialy.
+- Pri pokracovani na dalsi epizodu se bere prvni nejlepsi zdroj ze seznamu a pri mrtvem zdroji plugin automaticky zkusi dalsi zdroj v poradi.
+- U automatickeho pokracovani se mrtve WebShare zdroje preskakuji rychleji a bez zbytecne chybove hlasky pro kazdy spatny zdroj.
+- Opravena prubezna aktualizace barev, fajfek a rozkoukaneho stavu po dokonceni filmu nebo epizody.
+- Slozky se stejnymi WebShare zdroji prebira stav svych polozek, takze je videt rozkoukany nebo zhlednuty stav uz na slozce.
+- Opraveno znaceni stavu pres Kodi overlay/playcount bez vkladani symbolu primo do nazvu polozek.
+- Upraveno pojmenovani WebShare zdroju u serialu na tvar `Nazev serialu - S01E09 - nazev epizody` bez roku.
 
 ### 0.1.10
 
