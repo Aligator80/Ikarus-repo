@@ -2,7 +2,7 @@
 <addons>
 
 
-<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.10" version="0.1.10" provider-name="Kokutek Robin">
+<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.11" version="0.1.11" provider-name="Kokutek Robin">
   <requires>
     <!-- Kodi 19+ (Matrix/Nexus/Omega) -->
     <import addon="xbmc.python" version="3.0.0"/>
@@ -34,7 +34,18 @@
       <icon>resources/icon.png</icon>
     </assets>
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news>[B]0.1.10[/B] - informativni upozorneni pri startu
+    <news>[B]0.1.11[/B] - opravy hledani zdroju, znaceni a pokracovani serialu
+- Zpresneno hledani zdroju pro serialove epizody, aby obecny nazev epizody jako Pilot nespoustel shody s cizimi serialy.
+- Pri pokracovani na dalsi epizodu se bere prvni nejlepsi zdroj ze seznamu a pri mrtvem zdroji plugin automaticky zkusi dalsi zdroj v poradi.
+- U automatickeho pokracovani se mrtve WebShare zdroje preskakuji rychleji a bez zbytecne chybove hlasky pro kazdy spatny zdroj.
+- Opravena prubezna aktualizace barev, fajfek a rozkoukaneho stavu po dokonceni filmu nebo epizody.
+- Slozky se stejnymi WebShare zdroji prebira stav svych polozek, takze je videt rozkoukany nebo zhlednuty stav uz na slozce.
+- Opraveno znaceni stavu pres Kodi overlay/playcount bez vkladani symbolu primo do nazvu polozek.
+- Upraveno pojmenovani WebShare zdroju u serialu na tvar Nazev serialu - S01E09 - nazev epizody bez roku.
+
+----------------------------------------
+
+[B]0.1.10[/B] - informativni upozorneni pri startu
 - Pri spusteni pluginu se zobrazi informativni upozorneni s povinnym potvrzenim souhlasu.
 - Hlavni menu Ikarusu se spusti az po potvrzeni informativniho upozorneni.
 - Do nastaveni byla pridana volba Uz nezobrazovat informativni text pri startu.
