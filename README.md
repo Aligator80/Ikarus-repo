@@ -10,10 +10,22 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus` - `0.1.11`
+- `plugin.video.ikarus` - `0.1.12`
 - `repository.ikarus` - `1.0.1`
 
 ## Historie verzi
+
+### 0.1.12
+
+- Zhlednute a rozkoukane se zobrazuji sjednocene z lokalniho souboru a z Trakt.TV.
+- Synchronizace prehravaciho stavu pres GitHub/Gist byla nahrazena lokalnim ulozenim a volitelnym napojenim na Trakt.TV.
+- Pridana rucni synchronizace lokalnich zhlednutych a rozkoukanych na Trakt.TV.
+- Rucni oznaceni a zruseni oznaceni filmu, epizod, serii a serialu se uklada lokalne i na Trakt.TV.
+- Pri prehravani se na Trakt.TV odesila rozkoukany stav a po dokonceni prehravani zhlednuty stav.
+- Pri opakovanem zhlednuti filmu nebo epizody se na Trakt.TV prepise datum zhlednuti na aktualni cas.
+- Opravena ochrana proti duplicitam a zachovani puvodniho data zhlednuti pri rucni synchronizaci starsich lokalnich zaznamu.
+- Opraveno nacitani popularnich filmu v TMDB menu.
+- AI oprava nacitani polozek z Databaze TMDB.
 
 ### 0.1.11
 
