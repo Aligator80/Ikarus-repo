@@ -2,7 +2,7 @@
 <addons>
 
 
-<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.11" version="0.1.11" provider-name="Kokutek Robin">
+<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.12" version="0.1.12" provider-name="Kokutek Robin">
   <requires>
     <!-- Kodi 19+ (Matrix/Nexus/Omega) -->
     <import addon="xbmc.python" version="3.0.0"/>
@@ -34,11 +34,24 @@
       <icon>resources/icon.png</icon>
     </assets>
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news>[B]0.1.11[/B] - opravy hledani zdroju, znaceni a pokracovani serialu
+    <news>[B]0.1.12[/B] - sjednoceni zhlednutych a rozkoukanych s Trakt.TV
+- Zhlednute a rozkoukane se zobrazuji sjednocene z lokalniho souboru a z Trakt.TV.
+- Synchronizace prehravaciho stavu pres GitHub/Gist byla nahrazena lokalnim ulozenim a volitelnym napojenim na Trakt.TV.
+- Pridana rucni synchronizace lokalnich zhlednutych a rozkoukanych na Trakt.TV.
+- Rucni oznaceni a zruseni oznaceni filmu, epizod, serii a serialu se uklada lokalne i na Trakt.TV.
+- Pri prehravani se na Trakt.TV odesila rozkoukany stav a po dokonceni prehravani zhlednuty stav.
+- Pri opakovanem zhlednuti filmu nebo epizody se na Trakt.TV prepise datum zhlednuti na aktualni cas.
+- Opravena ochrana proti duplicitam a zachovani puvodniho data zhlednuti pri rucni synchronizaci starsich lokalnich zaznamu.
+- Opraveno nacitani popularnich filmu v TMDB menu.
+- AI oprava nacitani polozek z Databaze TMDB.
+
+----------------------------------------
+
+[B]0.1.11[/B] - opravy hledani zdroju, znaceni a pokracovani serialu
 - Zpresneno hledani zdroju pro serialove epizody, aby obecny nazev epizody jako Pilot nespoustel shody s cizimi serialy.
 - Pri pokracovani na dalsi epizodu se bere prvni nejlepsi zdroj ze seznamu a pri mrtvem zdroji plugin automaticky zkusi dalsi zdroj v poradi.
 - U automatickeho pokracovani se mrtve WebShare zdroje preskakuji rychleji a bez zbytecne chybove hlasky pro kazdy spatny zdroj.
-- Opravena prubezna aktualizace barev, fajfek a rozkoukaneho stavu po dokonceni filmu nebo epizody.
+- Opravena prubezna aktualizace barev, fajek a rozkoukaneho stavu po dokonceni filmu nebo epizody.
 - Slozky se stejnymi WebShare zdroji prebira stav svych polozek, takze je videt rozkoukany nebo zhlednuty stav uz na slozce.
 - Opraveno znaceni stavu pres Kodi overlay/playcount bez vkladani symbolu primo do nazvu polozek.
 - Upraveno pojmenovani WebShare zdroju u serialu na tvar Nazev serialu - S01E09 - nazev epizody bez roku.
