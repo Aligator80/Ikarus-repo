@@ -10,10 +10,20 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus` - `0.1.12`
+- `plugin.video.ikarus` - `0.1.13`
 - `repository.ikarus` - `1.0.1`
 
 ## Historie verzi
+
+### 0.1.13
+
+- Rozkoukane a zhlednute seznamy uz berou nazvy prioritne z TMDB misto michani nazvu z Trakt.TV.
+- Opraveno pokracovani na dalsi epizodu tak, aby se po rucnim zastaveni prehravani nespoustel dalsi dil.
+- Zpresnen filtr serialovych zdroju na WebShare, aby se lepe oddelily spravne shody od cizich serialu a slabych shod podle samotneho nazvu epizody.
+- Opraveno rozpoznavani serialu jako `Akolytka / The Acolyte` pro `Hellspy`, `Prehraj.to` a `SkTOnline`.
+- Zrychleno hledani zdroju u provideru `Prehraj.to`, `Hellspy`, `SkTOnline` a `WebShare` bez omezeni poctu nalezenych zdroju.
+- Zrychleno dotahovani detailu a playback stavu u vysledku, aby se seznam nalezenych zdroju zobrazoval rychleji i pri vetsim poctu polozek.
+- Doplneny interni debug a casove logy pro lepsi ladeni hledani zdroju.
 
 ### 0.1.12
 
