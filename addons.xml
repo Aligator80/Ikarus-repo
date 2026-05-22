@@ -2,7 +2,7 @@
 <addons>
 
 
-<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.12" version="0.1.12" provider-name="Kokutek Robin">
+<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.13" version="0.1.13" provider-name="Kokutek Robin">
   <requires>
     <!-- Kodi 19+ (Matrix/Nexus/Omega) -->
     <import addon="xbmc.python" version="3.0.0"/>
@@ -34,7 +34,18 @@
       <icon>resources/icon.png</icon>
     </assets>
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news>[B]0.1.12[/B] - sjednoceni zhlednutych a rozkoukanych s Trakt.TV
+    <news>[B]0.1.13[/B] - dalsi ladeni zdroju a zrychleni hledani
+- Rozkoukane a zhlednute seznamy uz berou nazvy prioritne z TMDB misto michani nazvu z Trakt.TV.
+- Opraveno pokracovani na dalsi epizodu tak, aby se po rucnim zastaveni prehravani nespoustel dalsi dil.
+- Zpresnen filtr serialovych zdroju na WebShare, aby se lepe oddelily spravne shody od cizich serialu a slabych shod podle samotneho nazvu epizody.
+- Opraveno rozpoznavani serialu jako Akolytka / The Acolyte pro Hellspy, Prehraj.to a SkTOnline.
+- Zrychleno hledani zdroju u provideru Prehraj.to, Hellspy, SkTOnline a WebShare bez omezeni poctu nalezenych zdroju.
+- Zrychleno dotahovani detailu a playback stavu u vysledku, aby se seznam nalezenych zdroju zobrazoval rychleji i pri vetsim poctu polozek.
+- Doplnene interni debug a casove logy pro lepsi ladeni hledani zdroju.
+
+----------------------------------------
+
+[B]0.1.12[/B] - sjednoceni zhlednutych a rozkoukanych s Trakt.TV
 - Zhlednute a rozkoukane se zobrazuji sjednocene z lokalniho souboru a z Trakt.TV.
 - Synchronizace prehravaciho stavu pres GitHub/Gist byla nahrazena lokalnim ulozenim a volitelnym napojenim na Trakt.TV.
 - Pridana rucni synchronizace lokalnich zhlednutych a rozkoukanych na Trakt.TV.
