@@ -2,7 +2,7 @@
 <addons>
 
 
-<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.13" version="0.1.13" provider-name="Kokutek Robin">
+<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.14" version="0.1.14" provider-name="Kokutek Robin">
   <requires>
     <!-- Kodi 19+ (Matrix/Nexus/Omega) -->
     <import addon="xbmc.python" version="3.0.0"/>
@@ -34,7 +34,17 @@
       <icon>resources/icon.png</icon>
     </assets>
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news>[B]0.1.13[/B] - dalsi ladeni zdroju a zrychleni hledani
+    <news>[B]0.1.14[/B] - revize pokracovani serialu a zpresneni serialovych shod
+- Udelana vetsi revize pokracovani na dalsi epizodu v TMDB prehravani.
+- Auto-next zacina hledat dalsi epizodu driv i u kratsich dilu a ma zalozni synchronni pripravu na konci prehravani.
+- Sjednocena kontrola, kdy je dalsi epizoda opravdu pripravena pro automaticke spusteni.
+- Pro podporovane providery se dalsi epizoda pri auto-next snazi rozresolveovat a spoustet primo, aby byla mensi prodleva mezi dily a mene navrstvenych plugin behu.
+- Zpresnena serialova filtrace na WebShare, aby kombinace spravneho cisla epizody a nazvu epizody zustala v hlavnich vysledcich.
+- Slabe shody pouze podle nazvu epizody bez cisla se znovu odkladaji do posledni slozky mozne shody.
+
+----------------------------------------
+
+[B]0.1.13[/B] - dalsi ladeni zdroju a zrychleni hledani
 - Rozkoukane a zhlednute seznamy uz berou nazvy prioritne z TMDB misto michani nazvu z Trakt.TV.
 - Opraveno pokracovani na dalsi epizodu tak, aby se po rucnim zastaveni prehravani nespoustel dalsi dil.
 - Zpresnen filtr serialovych zdroju na WebShare, aby se lepe oddelily spravne shody od cizich serialu a slabych shod podle samotneho nazvu epizody.
