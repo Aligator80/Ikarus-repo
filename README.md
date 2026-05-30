@@ -10,10 +10,16 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus` - `0.1.14`
+- `plugin.video.ikarus` - `0.1.15`
 - `repository.ikarus` - `1.0.1`
 
 ## Historie verzi
+
+### 0.1.15 - dalsi zpřesnění seriálových názvů a epizod
+- Zpřesněno hledání providerů Přehraj.to, Hellspy a WebShare pro seriály s nestandardně uloženými názvy epizod.
+- Přidána podpora tolerantnější shody názvů epizod podle prefixu a významových tokenů u seriálů jako Životy slavných.
+- Opraveno párování seriálu Sex O’Clock i v názvech typu S## O’Clock a S. O'Clock.
+- U první série se nově rozpozná i zápis epizody ve stylu 10.díl nebo 10.diel.
 
 ### 0.1.14 - revize pokracovani serialu a zpresneni serialovych shod
 - Udelana vetsi revize pokracovani na dalsi epizodu v TMDB prehravani.
