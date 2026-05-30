@@ -2,7 +2,7 @@
 <addons>
 
 
-<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.14" version="0.1.14" provider-name="Kokutek Robin">
+<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.15" version="0.1.15" provider-name="Kokutek Robin">
   <requires>
     <!-- Kodi 19+ (Matrix/Nexus/Omega) -->
     <import addon="xbmc.python" version="3.0.0"/>
@@ -34,7 +34,15 @@
       <icon>resources/icon.png</icon>
     </assets>
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news>[B]0.1.14[/B] - revize pokracovani serialu a zpresneni serialovych shod
+    <news>[B]0.1.15[/B] - dalsi zpřesnění seriálových názvů a epizod
+- Zpřesněno hledání providerů Přehraj.to, Hellspy a WebShare pro seriály s nestandardně uloženými názvy epizod.
+- Přidána podpora tolerantnější shody názvů epizod podle prefixu a významových tokenů u seriálů jako Životy slavných.
+- Opraveno párování seriálu Sex O’Clock i v názvech typu S## O’Clock a S. O'Clock.
+- U první série se nově rozpozná i zápis epizody ve stylu 10.díl nebo 10.diel.
+
+----------------------------------------
+
+[B]0.1.14[/B] - revize pokracovani serialu a zpresneni serialovych shod
 - Udelana vetsi revize pokracovani na dalsi epizodu v TMDB prehravani.
 - Auto-next zacina hledat dalsi epizodu driv i u kratsich dilu a ma zalozni synchronni pripravu na konci prehravani.
 - Sjednocena kontrola, kdy je dalsi epizoda opravdu pripravena pro automaticke spusteni.
