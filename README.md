@@ -10,10 +10,24 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus` - `0.1.15`
+- `plugin.video.ikarus` - `0.1.16`
 - `repository.ikarus` - `1.0.1`
 
 ## Historie verzi
+
+### 0.1.16 - rychlejsi seznamy, hledani zdroju a stabilnejsi prehravani
+- Zrychleno nacitani vlastnich seznamu, chytrych seznamu, rozkoukanych a zhlednutych polozek.
+- Opraveno listovani ve vlastnich seznamech, aby navrat a prechod mezi strankami fungoval spravneji.
+- Opraveno zobrazovani obrazku a popisu u polozek v chytrych seznamech.
+- Zrychleno hledani zdroju ve filmech, serialech a rucnim hledani.
+- Opraveno prehravani WebShare zdroju po upravach spolecneho prehravace.
+- Lepe se oznacuji prehrane zdroje: lokalne prehrany konkretni zdroj se oznaci presneji, Trakt.TV stav zustava jen u nazvu filmu nebo serialu.
+- Rucni hledani Prehraj.to, Hellspy, SkTonLine a WebShare ma spolecnejsi a odolnejsi zpracovani zdroju.
+- Mrtve nebo nedostupne Hellspy streamy se zachyti driv a zapisi jasneji do logu.
+- Do nastaveni byla pridana diagnostika Ikarusu pro rychlejsi kontrolu prihlaseni, Trakt.TV, seznamu, cache a fronty stahovani.
+- Docasna cache nalezenych zdroju se cisti automaticky pri startu Kodi, ne pri kazdem otevreni menu.
+- Doplneno podrobnejsi logovani zacatku, konce a trvani dulezitych akci, aby se lepe hledalo pripadne zaseknuti Kodi.
+- Pridany dalsi ochrany proti chybejicim nebo spatnym parametrum u prehravani zdroju.
 
 ### 0.1.15 - dalsi zpřesnění seriálových názvů a epizod
 - Zpřesněno hledání providerů Přehraj.to, Hellspy a WebShare pro seriály s nestandardně uloženými názvy epizod.
