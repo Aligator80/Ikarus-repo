@@ -1,40 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-
-
-<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.15" version="0.1.15" provider-name="Kokutek Robin">
+<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.16" version="0.1.16" provider-name="Kokutek Robin">
   <requires>
     <!-- Kodi 19+ (Matrix/Nexus/Omega) -->
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.requests" version="2.18.4"/>
-    <import addon="script.module.unidecode" version="0.4.16"/>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.requests" version="2.18.4" />
+    <import addon="script.module.unidecode" version="0.4.16" />
     <import addon="script.module.beautifulsoup4" version="4.0.0" />
   </requires>
-
   <extension point="xbmc.python.pluginsource" library="main.py">
     <provides>video</provides>
   </extension>
-
   <extension point="xbmc.service" library="resources/lib/service_downloads.py" start="startup" />
-
   <extension point="xbmc.addon.metadata">
     <summary lang="cs_CZ">Yet Another Webshare Plugin</summary>
     <summary lang="en_GB">Yet Another Webshare Plugin</summary>
-
     <description lang="cs_CZ">Plugin je pouze procházeč veřejně dostupného webu. Nezodpovídám za obsah poskytovaný tímto webem.</description>
     <description lang="en_GB">This add-on only simulates browsing a publicly available website. I’m not responsible for the content provided by that site.</description>
-
     <disclaimer lang="en_GB">The plugin does not provide any content, it is only a simulation of the browser of a publicly available web site. I am not responsible for the content provided by this site.</disclaimer>
     <disclaimer lang="sk_SK">Plugin neposkytuje žiaden obsah, je to len simulácia prehliadača verejne dostupnej web stránky. Nie som zodpovedný za obsah, ktorý táto stránka poskytuje.</disclaimer>
     <disclaimer lang="cs_CZ">Plugin neposkytuje žádný obsah, je to jen simulace prohlížeče veřejně dostupné web stránky. Nejsem zodpovědný za obsah, který tato stránka poskytuje.</disclaimer>
-
     <platform>all</platform>
     <license>AGPL 3.0</license>
     <assets>
       <icon>resources/icon.png</icon>
     </assets>
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news>[B]0.1.15[/B] - dalsi zpřesnění seriálových názvů a epizod
+    <news>[B]0.1.16[/B] - rychlejsi seznamy, hledani zdroju a stabilnejsi prehravani
+- Zrychleno nacitani vlastnich seznamu, chytrych seznamu, rozkoukanych a zhlednutych polozek.
+- Opraveno listovani ve vlastnich seznamech, aby navrat a prechod mezi strankami fungoval spravneji.
+- Opraveno zobrazovani obrazku a popisu u polozek v chytrych seznamech.
+- Zrychleno hledani zdroju ve filmech, serialech a rucnim hledani.
+- Opraveno prehravani WebShare zdroju po upravach spolecneho prehravace.
+- Lepe se oznacuji prehrane zdroje: lokalne prehrany konkretni zdroj se oznaci presneji, Trakt.TV stav zustava jen u nazvu filmu nebo serialu.
+- Rucni hledani Prehraj.to, Hellspy, SkTonLine a WebShare ma spolecnejsi a odolnejsi zpracovani zdroju.
+- Mrtve nebo nedostupne Hellspy streamy se zachyti driv a zapisi jasneji do logu.
+- Do nastaveni byla pridana diagnostika Ikarusu pro rychlejsi kontrolu prihlaseni, Trakt.TV, seznamu, cache a fronty stahovani.
+- Docasna cache nalezenych zdroju se cisti automaticky pri startu Kodi, ne pri kazdem otevreni menu.
+- Doplneno podrobnejsi logovani zacatku, konce a trvani dulezitych akci, aby se lepe hledalo pripadne zaseknuti Kodi.
+- Pridany dalsi ochrany proti chybejicim nebo spatnym parametrum u prehravani zdroju.
+
+----------------------------------------
+  [B]0.1.15[/B] - dalsi zpřesnění seriálových názvů a epizod
 - Zpřesněno hledání providerů Přehraj.to, Hellspy a WebShare pro seriály s nestandardně uloženými názvy epizod.
 - Přidána podpora tolerantnější shody názvů epizod podle prefixu a významových tokenů u seriálů jako Životy slavných.
 - Opraveno párování seriálu Sex O’Clock i v názvech typu S## O’Clock a S. O'Clock.
@@ -187,7 +194,6 @@
 - Vlastní seznamy se synchronizují přes Trakt.TV.</news>
   </extension>
 </addon>
-
 <addon id="repository.ikarus" name="Ikarus Repository" version="1.0.1" provider-name="Kokutek Robin">
   <extension point="xbmc.addon.repository" name="Ikarus Repository">
     <dir minversion="19.0.0">
