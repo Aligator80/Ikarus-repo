@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.17" version="0.1.17" provider-name="Kokutek Robin">
+<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.18" version="0.1.18" provider-name="Kokutek Robin">
   <requires>
     <!-- Kodi 19+ (Matrix/Nexus/Omega) -->
     <import addon="xbmc.python" version="3.0.0" />
@@ -26,7 +26,17 @@
       <icon>resources/icon.png</icon>
     </assets>
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news>[B]0.1.17[/B] - vylepsene rucni hledani a nahledy zdroju
+    <news>[B]0.1.18[/B] - Trakt seznamy a stabilnejsi synchronizace
+- Po uspesnem prihlaseni k Trakt.TV se na pozadi rovnou synchronizuji zhlednute, rozkoukane i vsechny vlastni seznamy vcetne polozek.
+- Vlastni seznamy synchronizovane z Trakt.TV si pri ulozeni doplnuji nazvy, rok, obrazky a hodnoceni z TMDB, aby se na dalsich zarizenich netlacily anglicke nazvy.
+- Z menu Moje seznamy byla odstranena rucni synchronizace s Trakt.TV, protoze synchronizace probiha automaticky po prihlaseni a v servisni kontrole.
+- Opraveno nacitani obsahu verejnych Trakt.TV seznamu, ktere mohlo koncit hlaskou o chybejicim parametru username.
+- Opraveno hledani Prehraj.to ve spolecnem hledani zdroju, aby pouzivalo stejne varianty dotazu jako rucni hledani.
+- Pri automatickem pokracovani serialu se do prehravace znovu predava kompletni nazev epizody vcetne SxxEyy a nazvu dilu.
+
+----------------------------------------
+
+[B]0.1.17[/B] - vylepsene rucni hledani a nahledy zdroju
 - Rucni hledani si lepe pamatuje posledni vysledky a po prehrani se nevraci zbytecne na dialog noveho hledani.
 - Prehraj.to umi prihlaseni pro dostupnejsi vysledky a zastavi nacitani pri duplicitnich strankach, aby se zbytecne nezdrzovalo.
 - Prehraj.to vysledky maji doplnenou velikost souboru a nahled z prvniho obrazku videa.
