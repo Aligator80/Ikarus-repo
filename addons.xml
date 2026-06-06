@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.16" version="0.1.16" provider-name="Kokutek Robin">
+<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.17" version="0.1.17" provider-name="Kokutek Robin">
   <requires>
     <!-- Kodi 19+ (Matrix/Nexus/Omega) -->
     <import addon="xbmc.python" version="3.0.0" />
@@ -26,7 +26,19 @@
       <icon>resources/icon.png</icon>
     </assets>
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news>[B]0.1.16[/B] - rychlejsi seznamy, hledani zdroju a stabilnejsi prehravani
+    <news>[B]0.1.17[/B] - vylepsene rucni hledani a nahledy zdroju
+- Rucni hledani si lepe pamatuje posledni vysledky a po prehrani se nevraci zbytecne na dialog noveho hledani.
+- Prehraj.to umi prihlaseni pro dostupnejsi vysledky a zastavi nacitani pri duplicitnich strankach, aby se zbytecne nezdrzovalo.
+- Prehraj.to vysledky maji doplnenou velikost souboru a nahled z prvniho obrazku videa.
+- Hellspy vysledky maji doplneny nahled z API a velikost se zobrazuje i v popisu polozky.
+- SkTonLine vysledky maji doplneny nahled z vysledkove karty a lepsi popis delky videa.
+- WebShare rucni hledani zobrazuje prehlednejsi informace z file_info vcetne nazvu, jazyku, titulku, kvality, velikosti a nahledu.
+- Sjednoceno zobrazovani tagu jazyka, kvality, velikosti a delky u manualnich provideru.
+- Zrychleno a zodolneno nacitani Prehraj.to, Hellspy, SkTonLine a WebShare tak, aby nefunkcni zdroje rychleji koncily a lepe se logovaly.
+
+----------------------------------------
+
+[B]0.1.16[/B] - rychlejsi seznamy, hledani zdroju a stabilnejsi prehravani
 - Zrychleno nacitani vlastnich seznamu, chytrych seznamu, rozkoukanych a zhlednutych polozek.
 - Opraveno listovani ve vlastnich seznamech, aby navrat a prechod mezi strankami fungoval spravneji.
 - Opraveno zobrazovani obrazku a popisu u polozek v chytrych seznamech.
@@ -194,6 +206,7 @@
 - Vlastní seznamy se synchronizují přes Trakt.TV.</news>
   </extension>
 </addon>
+
 <addon id="repository.ikarus" name="Ikarus Repository" version="1.0.1" provider-name="Kokutek Robin">
   <extension point="xbmc.addon.repository" name="Ikarus Repository">
     <dir minversion="19.0.0">
