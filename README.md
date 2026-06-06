@@ -10,10 +10,20 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus` - `0.1.16`
+- `plugin.video.ikarus` - `0.1.17`
 - `repository.ikarus` - `1.0.1`
 
 ## Historie verzi
+
+### 0.1.17 - vylepsene rucni hledani a nahledy zdroju
+- Rucni hledani si lepe pamatuje posledni vysledky a po prehrani se nevraci zbytecne na dialog noveho hledani.
+- Prehraj.to umi prihlaseni pro dostupnejsi vysledky a zastavi nacitani pri duplicitnich strankach, aby se zbytecne nezdrzovalo.
+- Prehraj.to vysledky maji doplnenou velikost souboru a nahled z prvniho obrazku videa.
+- Hellspy vysledky maji doplneny nahled z API a velikost se zobrazuje i v popisu polozky.
+- SkTonLine vysledky maji doplneny nahled z vysledkove karty a lepsi popis delky videa.
+- WebShare rucni hledani zobrazuje prehlednejsi informace z file_info vcetne nazvu, jazyku, titulku, kvality, velikosti a nahledu.
+- Sjednoceno zobrazovani tagu jazyka, kvality, velikosti a delky u manualnich provideru.
+- Zrychleno a zodolneno nacitani Prehraj.to, Hellspy, SkTonLine a WebShare tak, aby nefunkcni zdroje rychleji koncily a lepe se logovaly.
 
 ### 0.1.16 - rychlejsi seznamy, hledani zdroju a stabilnejsi prehravani
 - Zrychleno nacitani vlastnich seznamu, chytrych seznamu, rozkoukanych a zhlednutych polozek.
