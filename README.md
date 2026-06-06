@@ -10,10 +10,18 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus` - `0.1.17`
+- `plugin.video.ikarus` - `0.1.18`
 - `repository.ikarus` - `1.0.1`
 
 ## Historie verzi
+
+### 0.1.18 - Trakt seznamy a stabilnejsi synchronizace
+- Po uspesnem prihlaseni k Trakt.TV se na pozadi rovnou synchronizuji zhlednute, rozkoukane i vsechny vlastni seznamy vcetne polozek.
+- Vlastni seznamy synchronizovane z Trakt.TV si pri ulozeni doplnuji nazvy, rok, obrazky a hodnoceni z TMDB, aby se na dalsich zarizenich netlacily anglicke nazvy.
+- Z menu Moje seznamy byla odstranena rucni synchronizace s Trakt.TV, protoze synchronizace probiha automaticky po prihlaseni a v servisni kontrole.
+- Opraveno nacitani obsahu verejnych Trakt.TV seznamu, ktere mohlo koncit hlaskou o chybejicim parametru username.
+- Opraveno hledani Prehraj.to ve spolecnem hledani zdroju, aby pouzivalo stejne varianty dotazu jako rucni hledani.
+- Pri automatickem pokracovani serialu se do prehravace znovu predava kompletni nazev epizody vcetne SxxEyy a nazvu dilu.
 
 ### 0.1.17 - vylepsene rucni hledani a nahledy zdroju
 - Rucni hledani si lepe pamatuje posledni vysledky a po prehrani se nevraci zbytecne na dialog noveho hledani.
