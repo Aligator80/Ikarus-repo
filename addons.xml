@@ -25,12 +25,18 @@
       <icon>resources/icon.png</icon>
     </assets>
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news>[B]0.1.19[/B] - diagnostika a stabilnejsi pokracovani serialu
-- Dodelana revize lokalizace: posledni fallbacky typu Bez nazvu/Zdroj jsou napojene na strings.po.
-- Opravena volba pro automaticke prehrani pouze CZ/SK zdroje u dalsi epizody serialu.
-- Rezim vyberoveho dialogu pro dalsi epizodu ma novou zalozni synchronni pripravu, kdyz prefetch nestihne dobehnout.
-- Tlacitka dialogu dalsi epizody jsou lokalizovana pres strings.po.
-- Provedena kompletni diagnostika Pythonu, XML, lokalizace a ZIP balicku pred vydanim.
+    <news>[B]0.1.19[/B] - velky uklid kodu, lokalizace a stabilnejsi prehravani
+- Dokoncena velka revize lokalizace: bezne staticke texty v menu, dialozich, nastaveni, zdrojich, TMDB/Trakt seznamech a auto-next hlaskach jsou presunute do strings.po pro cs_cz i en_gb.
+- Doplneny a sjednoceny preklady pro detaily zdroju, skupiny zdroju, profese u osob, fallbacky typu Zdroj/Seznam/Jazyk/Bez nazvu a chybove hlasky provideru.
+- Pokracoval uklid nejvetsich modulu a opakovanych helperu: spolecne zpracovani zdroju, metadat, velikosti, kvality, jazyku a resolveru je sjednocovane do sdilenych pomocnych funkci.
+- Zrychleno a zodolneno rucni hledani a prehravani u Prehraj.to, Hellspy, SkTonLine a WebShare; nefunkcni zdroje se lepe zachytavaji, loguji a ukoncuji.
+- Vylepseno chovani po prehrani rucne nalezeneho zdroje, aby se seznam vysledku zbytecne neztracel a neotviral znovu dialog noveho hledani.
+- Zrychleno vykreslovani verejnych Trakt.TV seznamu: stav zhlednuto/rozkoukano se pro stranku nacita jednou a zbytecne se nekopiruje pro kazdy radek.
+- Opraveno dotahovani ceskych nazvu ve Zhlednute/Rozkoukane uz pri vykresleni seznamu, vcetne ulozeni informace, ze nazev je overeny z TMDB detailu.
+- Zpresnen vyber lokalizovanych nazvu z TMDB, aby ceske alternativni nazvy mely prednost pred cizimi preklady typu Traques/Lov.
+- Opravena volba pro automaticke prehrani pouze CZ/SK zdroje u dalsi epizody serialu a doplnen fallback na dalsi zdroj, kdyz prvni zdroj selze.
+- Rezim vyberoveho dialogu pro dalsi epizodu ma novou zalozni synchronni pripravu, kdyz prefetch nestihne dobehnout, a tlacitka dialogu jsou lokalizovana pres strings.po.
+- Provedena kompletni diagnostika Pythonu, XML, lokalizace, duplicitnich definic, mrtveho kodu, importu a ZIP balicku pred vydanim.
 
 ----------------------------------------
 
