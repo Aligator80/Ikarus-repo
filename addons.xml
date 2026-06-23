@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.18" version="0.1.18" provider-name="Kokutek Robin">
+<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.19" version="0.1.19" provider-name="Kokutek Robin">
   <requires>
     <!-- Kodi 19+ (Matrix/Nexus/Omega) -->
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" version="2.18.4" />
-    <import addon="script.module.unidecode" version="0.4.16" />
     <import addon="script.module.beautifulsoup4" version="4.0.0" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="main.py">
@@ -26,7 +25,16 @@
       <icon>resources/icon.png</icon>
     </assets>
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news>[B]0.1.18[/B] - Trakt seznamy a stabilnejsi synchronizace
+    <news>[B]0.1.19[/B] - diagnostika a stabilnejsi pokracovani serialu
+- Dodelana revize lokalizace: posledni fallbacky typu Bez nazvu/Zdroj jsou napojene na strings.po.
+- Opravena volba pro automaticke prehrani pouze CZ/SK zdroje u dalsi epizody serialu.
+- Rezim vyberoveho dialogu pro dalsi epizodu ma novou zalozni synchronni pripravu, kdyz prefetch nestihne dobehnout.
+- Tlacitka dialogu dalsi epizody jsou lokalizovana pres strings.po.
+- Provedena kompletni diagnostika Pythonu, XML, lokalizace a ZIP balicku pred vydanim.
+
+----------------------------------------
+
+[B]0.1.18[/B] - Trakt seznamy a stabilnejsi synchronizace
 - Po uspesnem prihlaseni k Trakt.TV se na pozadi rovnou synchronizuji zhlednute, rozkoukane i vsechny vlastni seznamy vcetne polozek.
 - Vlastni seznamy synchronizovane z Trakt.TV si pri ulozeni doplnuji nazvy, rok, obrazky a hodnoceni z TMDB, aby se na dalsich zarizenich netlacily anglicke nazvy.
 - Z menu Moje seznamy byla odstranena rucni synchronizace s Trakt.TV, protoze synchronizace probiha automaticky po prihlaseni a v servisni kontrole.
