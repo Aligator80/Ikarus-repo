@@ -10,10 +10,17 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus` - `0.1.18`
+- `plugin.video.ikarus` - `0.1.19`
 - `repository.ikarus` - `1.0.1`
 
 ## Historie verzi
+
+### 0.1.19 - diagnostika a stabilnejsi pokracovani serialu
+- Dodelana revize lokalizace: posledni fallbacky typu Bez nazvu/Zdroj jsou napojene na strings.po.
+- Opravena volba pro automaticke prehrani pouze CZ/SK zdroje u dalsi epizody serialu.
+- Rezim vyberoveho dialogu pro dalsi epizodu ma novou zalozni synchronni pripravu, kdyz prefetch nestihne dobehnout.
+- Tlacitka dialogu dalsi epizody jsou lokalizovana pres strings.po.
+- Provedena kompletni diagnostika Pythonu, XML, lokalizace a ZIP balicku pred vydanim.
 
 ### 0.1.18 - Trakt seznamy a stabilnejsi synchronizace
 - Po uspesnem prihlaseni k Trakt.TV se na pozadi rovnou synchronizuji zhlednute, rozkoukane i vsechny vlastni seznamy vcetne polozek.
