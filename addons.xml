@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.19" version="0.1.19" provider-name="Kokutek Robin">
+<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.20" version="0.1.20" provider-name="Kokutek Robin">
   <requires>
     <!-- Kodi 19+ (Matrix/Nexus/Omega) -->
     <import addon="xbmc.python" version="3.0.0" />
@@ -25,7 +25,17 @@
       <icon>resources/icon.png</icon>
     </assets>
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news>[B]0.1.19[/B] - velky uklid kodu, lokalizace a stabilnejsi prehravani
+    <news>[B]0.1.20[/B] - oprava automatickeho prehravani dalsiho dilu serialu
+- Opraveno rozliseni prirozeneho konce epizody, rucniho zastaveni a chyby prehravace, aby se dalsi dil spoustel jen ve spravny okamzik.
+- Po timeoutu TMDB nebo provideru se hledani znovu opakuje a prazdny chybovy vysledek uz neblokuje dalsi pokus v cache.
+- Nahradni zdroje si pamatuji predchozi pokusy, neopakuji se v kruhu a maji bezpecny limit osmi zdroju.
+- Prodlouzeno cekani na rozbeh streamu, prefetch se spousti pozdeji a dalsi epizoda uz nevrstvi sledovaci funkce predchozich dilu.
+- SkTonLine pri automatickem pokracovani vybere nejlepsi kvalitu bez dialogu a Hellspy si pred prehranim vyzada cerstvy odkaz.
+- Automaticke pokracovani preskakuje dosud neodvysilane epizody a ma volitelnou diagnostiku v nastaveni pluginu.
+
+----------------------------------------
+
+[B]0.1.19[/B] - velky uklid kodu, lokalizace a stabilnejsi prehravani
 - Dokoncena velka revize lokalizace: bezne staticke texty v menu, dialozich, nastaveni, zdrojich, TMDB/Trakt seznamech a auto-next hlaskach jsou presunute do strings.po pro cs_cz i en_gb.
 - Doplneny a sjednoceny preklady pro detaily zdroju, skupiny zdroju, profese u osob, fallbacky typu Zdroj/Seznam/Jazyk/Bez nazvu a chybove hlasky provideru.
 - Pokracoval uklid nejvetsich modulu a opakovanych helperu: spolecne zpracovani zdroju, metadat, velikosti, kvality, jazyku a resolveru je sjednocovane do sdilenych pomocnych funkci.
@@ -77,7 +87,7 @@
 - Pridany dalsi ochrany proti chybejicim nebo spatnym parametrum u prehravani zdroju.
 
 ----------------------------------------
-  [B]0.1.15[/B] - dalsi zpřesnění seriálových názvů a epizod
+[B]0.1.15[/B] - dalsi zpřesnění seriálových názvů a epizod
 - Zpřesněno hledání providerů Přehraj.to, Hellspy a WebShare pro seriály s nestandardně uloženými názvy epizod.
 - Přidána podpora tolerantnější shody názvů epizod podle prefixu a významových tokenů u seriálů jako Životy slavných.
 - Opraveno párování seriálu Sex O’Clock i v názvech typu S## O’Clock a S. O'Clock.
@@ -123,7 +133,7 @@
 - Zpresneno hledani zdroju pro serialove epizody, aby obecny nazev epizody jako Pilot nespoustel shody s cizimi serialy.
 - Pri pokracovani na dalsi epizodu se bere prvni nejlepsi zdroj ze seznamu a pri mrtvem zdroji plugin automaticky zkusi dalsi zdroj v poradi.
 - U automatickeho pokracovani se mrtve WebShare zdroje preskakuji rychleji a bez zbytecne chybove hlasky pro kazdy spatny zdroj.
-- Opravena prubezna aktualizace barev, fajek a rozkoukaneho stavu po dokonceni filmu nebo epizody.
+- Opravena prubezna aktualizace barev, fajfek a rozkoukaneho stavu po dokonceni filmu nebo epizody.
 - Slozky se stejnymi WebShare zdroji prebira stav svych polozek, takze je videt rozkoukany nebo zhlednuty stav uz na slozce.
 - Opraveno znaceni stavu pres Kodi overlay/playcount bez vkladani symbolu primo do nazvu polozek.
 - Upraveno pojmenovani WebShare zdroju u serialu na tvar Nazev serialu - S01E09 - nazev epizody bez roku.
@@ -202,9 +212,9 @@
 
 ----------------------------------------
 
-[B]0.1.2[/B] - oprava zobrazení verze a seznamu změn
-- V okně Verze se budou zobrazovat aktuální změny pluginu Ikarus.
-- Doplněn přehled změn podle changelogu.
+[B]0.1.2[/B] - zobrazení změn v Kodi
+- Doplněn přehled změn do metadata položky news.
+- Upraveno zobrazení informací pro okno Verze v Kodi.
 
 ----------------------------------------
 
