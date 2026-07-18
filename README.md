@@ -10,10 +10,18 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus` - `0.1.19`
+- `plugin.video.ikarus` - `0.1.20`
 - `repository.ikarus` - `1.0.1`
 
 ## Historie verzi
+
+### 0.1.20 - oprava automatickeho prehravani dalsiho dilu serialu
+- Opraveno rozliseni prirozeneho konce epizody, rucniho zastaveni a chyby prehravace, aby se dalsi dil spoustel jen ve spravny okamzik.
+- Po timeoutu TMDB nebo provideru se hledani znovu opakuje a prazdny chybovy vysledek uz neblokuje dalsi pokus v cache.
+- Nahradni zdroje si pamatuji predchozi pokusy, neopakuji se v kruhu a maji bezpecny limit osmi zdroju.
+- Prodlouzeno cekani na rozbeh streamu, prefetch se spousti pozdeji a dalsi epizoda uz nevrstvi sledovaci funkce predchozich dilu.
+- SkTonLine pri automatickem pokracovani vybere nejlepsi kvalitu bez dialogu a Hellspy si pred prehranim vyzada cerstvy odkaz.
+- Automaticke pokracovani preskakuje dosud neodvysilane epizody a ma volitelnou diagnostiku v nastaveni pluginu.
 
 ### 0.1.19 - velky uklid kodu, lokalizace a stabilnejsi prehravani
 - Dokoncena velka revize lokalizace: bezne staticke texty v menu, dialozich, nastaveni, zdrojich, TMDB/Trakt seznamech a auto-next hlaskach jsou presunute do strings.po pro cs_cz i en_gb.
@@ -98,7 +106,7 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 - Zpresneno hledani zdroju pro serialove epizody, aby obecny nazev epizody jako Pilot nespoustel shody s cizimi serialy.
 - Pri pokracovani na dalsi epizodu se bere prvni nejlepsi zdroj ze seznamu a pri mrtvem zdroji plugin automaticky zkusi dalsi zdroj v poradi.
 - U automatickeho pokracovani se mrtve WebShare zdroje preskakuji rychleji a bez zbytecne chybove hlasky pro kazdy spatny zdroj.
-- Opravena prubezna aktualizace barev, fajek a rozkoukaneho stavu po dokonceni filmu nebo epizody.
+- Opravena prubezna aktualizace barev, fajfek a rozkoukaneho stavu po dokonceni filmu nebo epizody.
 - Slozky se stejnymi WebShare zdroji prebira stav svych polozek, takze je videt rozkoukany nebo zhlednuty stav uz na slozce.
 - Opraveno znaceni stavu pres Kodi overlay/playcount bez vkladani symbolu primo do nazvu polozek.
 - Upraveno pojmenovani WebShare zdroju u serialu na tvar Nazev serialu - S01E09 - nazev epizody bez roku.
@@ -159,9 +167,9 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 - Přidán přehled aktuální verze a změn přímo v nastavení pluginu.
 - Do nastavení doplněn viditelný řádek s aktuální verzí pluginu.
 
-### 0.1.2 - oprava zobrazení verze a seznamu změn
-- V okně Verze se budou zobrazovat aktuální změny pluginu Ikarus.
-- Doplněn přehled změn podle changelogu.
+### 0.1.2 - zobrazení změn v Kodi
+- Doplněn přehled změn do metadata položky news.
+- Upraveno zobrazení informací pro okno Verze v Kodi.
 
 ### 0.1.1 - navazování další epizody
 - Upraveno navázání další epizody u seriálů z TMDB.
