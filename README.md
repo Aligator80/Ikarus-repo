@@ -10,10 +10,20 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus` - `0.1.20`
+- `plugin.video.ikarus` - `0.1.21`
 - `repository.ikarus` - `1.0.1`
 
 ## Historie verzi
+
+### 0.1.21 - oprava stavu zhlednuto a odolnejsi synchronizace Trakt.TV
+- Opraveno nacitani kompletni historie Trakt.TV vcetne vsech stranek, opakovanych pokusu a kontroly neuplne odpovedi.
+- Bezna menu serialu, sezon a epizod ted spojuji lokalni stav se stavem z Trakt.TV, takze se spravne zobrazi i drive zhlednute dily.
+- Lokalni prubeh prehravani je oddeleny od posledniho platneho Trakt snapshotu a podezrele zkracena synchronizace uz neprepise dobra data.
+- Zmeny prubehu, oznaceni zhlednuto i odebrani stavu maji trvalou frontu s opakovanim, takze se po docasnem vypadku Trakt.TV odeslou pozdeji.
+- Ukladani stavu prehravani, fronty stahovani, vlastnich seznamu, prefetch fronty a verejnych oblibenych pouziva atomicky zapis, zalohu a ochranu proti soubehu.
+- Stahovane soubory se nejprve dokonci do docasneho souboru a puvodni cil se pri chybe zachova.
+- Prime odkazy, tokeny a citlive HTTP hlavicky se neukladaji do stavu prehravani a v diagnostickych lozich se skryvaji.
+- Rozsirena diagnostika a automaticke testy synchronizace, front, uloziste, stahovani a zobrazeni stavu epizod.
 
 ### 0.1.20 - oprava automatickeho prehravani dalsiho dilu serialu
 - Opraveno rozliseni prirozeneho konce epizody, rucniho zastaveni a chyby prehravace, aby se dalsi dil spoustel jen ve spravny okamzik.
