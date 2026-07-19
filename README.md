@@ -10,10 +10,18 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus` - `0.1.21`
+- `plugin.video.ikarus` - `0.1.22`
 - `repository.ikarus` - `1.0.1`
 
 ## Historie verzi
+
+### 0.1.22 - rychlejsi nacitani rozkoukanych a zhlednutych
+- Otevreni seznamu Rozkoukane a Zhlednute uz neceka na sitovou synchronizaci Trakt.TV; aktualizaci nadale zajistuje sluzba na pozadi.
+- Pro seznamy se automaticky vytvari lehky index bez tisicu epizodnich zdroju, primych odkazu a dalsich nepotrebnych dat.
+- Index se sam obnovi po zmene Trakt snapshotu nebo odchozi fronty, zatimco plny snapshot zustava zachovany pro presne stavy sezon a epizod.
+- Pri spojeni lokalniho a Trakt stavu ma prednost novejsi zaznam a spravne se rozpozna film nebo serial i u starsich lokalnich dat.
+- Zrychleno opakovane pouziti pametove cache a diagnostika nove zobrazuje velikost, pocet polozek a schema seznamoveho indexu.
+- Doplneny regresni testy bezsitoveho nacteni, obnovy indexu, ochrany citlivych dat a priority lokalniho stavu.
 
 ### 0.1.21 - oprava stavu zhlednuto a odolnejsi synchronizace Trakt.TV
 - Opraveno nacitani kompletni historie Trakt.TV vcetne vsech stranek, opakovanych pokusu a kontroly neuplne odpovedi.
