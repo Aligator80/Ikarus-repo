@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.22" version="0.1.22" provider-name="Kokutek Robin">
+<addon id="plugin.video.ikarus" name="Ikarus - WebShare - ver 0.1.23" version="0.1.23" provider-name="Kokutek Robin">
   <requires>
     <!-- Kodi 19+ (Matrix/Nexus/Omega) -->
     <import addon="xbmc.python" version="3.0.0" />
@@ -25,7 +25,16 @@
       <icon>resources/icon.png</icon>
     </assets>
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news>[B]0.1.22[/B] - rychlejsi nacitani rozkoukanych a zhlednutych
+    <news>[B]0.1.23[/B] - Trakt.TV, vzhled a presnejsi zdroje WebShare
+- Opraveno obnoveni prihlaseni k Trakt.TV a obousmerna synchronizace zhlédnutych a rozkoukanych polozek mezi lokalnim stavem a uctem.
+- Vlastni seznamy z Trakt.TV se pri migraci a synchronizaci slucuji podle Trakt ID nebo slugu, aby se stejne seznamy nezobrazovaly dvakrat.
+- Po kazdem spusteni se aktivuje klasicky vzhled. Cinema lze zapnout pouze v nastaveni kodem 1234; volba byla odstranena z hlavniho menu.
+- WebShare nacita podrobnosti souboru s omezenou cache a oddeluje potvrzene zdroje od slozky Mozne shody. Neoverene shody se nepouziji pro automaticke pokracovani serialu.
+- Doplneny regresni testy synchronizace seznamu, Trakt prihlaseni a klasifikace zdroju WebShare.
+
+----------------------------------------
+
+[B]0.1.22[/B] - rychlejsi nacitani rozkoukanych a zhlednutych
 - Otevreni seznamu Rozkoukane a Zhlednute uz neceka na sitovou synchronizaci Trakt.TV; aktualizaci nadale zajistuje sluzba na pozadi.
 - Pro seznamy se automaticky vytvari lehky index bez tisicu epizodnich zdroju, primych odkazu a dalsich nepotrebnych dat.
 - Index se sam obnovi po zmene Trakt snapshotu nebo odchozi fronty, zatimco plny snapshot zustava zachovany pro presne stavy sezon a epizod.
