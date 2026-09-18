@@ -10,10 +10,17 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus` - `0.1.22`
+- `plugin.video.ikarus` - `0.1.23`
 - `repository.ikarus` - `1.0.1`
 
 ## Historie verzi
+
+### 0.1.23 - Trakt.TV, vzhled a presnejsi zdroje WebShare
+- Opraveno obnoveni prihlaseni k Trakt.TV a obousmerna synchronizace zhlédnutych a rozkoukanych polozek mezi lokalnim stavem a uctem.
+- Vlastni seznamy z Trakt.TV se pri migraci a synchronizaci slucuji podle Trakt ID nebo slugu, aby se stejne seznamy nezobrazovaly dvakrat.
+- Po kazdem spusteni se aktivuje klasicky vzhled. Cinema lze zapnout pouze v nastaveni kodem 1234; volba byla odstranena z hlavniho menu.
+- WebShare nacita podrobnosti souboru s omezenou cache a oddeluje potvrzene zdroje od slozky Mozne shody. Neoverene shody se nepouziji pro automaticke pokracovani serialu.
+- Doplneny regresni testy synchronizace seznamu, Trakt prihlaseni a klasifikace zdroju WebShare.
 
 ### 0.1.22 - rychlejsi nacitani rozkoukanych a zhlednutych
 - Otevreni seznamu Rozkoukane a Zhlednute uz neceka na sitovou synchronizaci Trakt.TV; aktualizaci nadale zajistuje sluzba na pozadi.
