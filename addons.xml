@@ -299,7 +299,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="plugin.video.ikarus.db" name="Ikarus DB" version="0.1.10" provider-name="Ikarus">
+<addon id="plugin.video.ikarus.db" name="Ikarus DB - ver 0.1.11" version="0.1.11" provider-name="Ikarus">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" version="2.18.4" />
