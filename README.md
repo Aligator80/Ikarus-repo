@@ -10,9 +10,17 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus.db` - `0.1.26`
+- `plugin.video.ikarus.db` - `0.1.27`
 - `plugin.video.ikarus` - `0.1.24`
 - `repository.ikarus` - `1.0.1`
+
+## Ikarus DB 0.1.27
+
+- Nazvy filmu a serialu maji prednost v cestine, pri chybejicim prekladu v anglictine.
+- Stejne pravidlo plati pro TMDB metadata, hledani a import serialu na serveru.
+- Starsi mezipamet nazvu se pri dalsim nacteni metadat obnovi.
+
+[Instalacni balicek Ikarus DB 0.1.27](zips/plugin.video.ikarus.db/plugin.video.ikarus.db-0.1.27.zip)
 
 ## Ikarus DB 0.1.26
 
@@ -234,4 +242,5 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 1. Zvednout verzi v `plugin.video.ikarus/addon.xml`.
 2. Dopsat zmeny do `<news>` v `plugin.video.ikarus/addon.xml` a pripadne do `plugin.video.ikarus/resources/lib/version_info.py`.
 3. Spustit `ikarus-repo-tools/build_and_upload_repo.cmd`.
+
 
