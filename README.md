@@ -10,8 +10,18 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
+- `plugin.video.ikarus.db` - `0.1.26`
 - `plugin.video.ikarus` - `0.1.24`
 - `repository.ikarus` - `1.0.1`
+
+## Ikarus DB 0.1.26
+
+- Obnova vyprsele relace WebShare pri spusteni filmu, epizody i pokracovani.
+- Film nebo epizoda se po prehrani vice nez 80 % oznaci jako zhlednuta.
+- Kratke nazvy serii, napr. `Serie 3 (50/50)`, bez dodatku Bez zdroje.
+- Pri prehravani se nazev a rok predavaji zvlast, aby se rok neopakoval.
+
+[Instalacni balicek Ikarus DB 0.1.26](zips/plugin.video.ikarus.db/plugin.video.ikarus.db-0.1.26.zip)
 
 ## Historie verzi
 
@@ -224,3 +234,4 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 1. Zvednout verzi v `plugin.video.ikarus/addon.xml`.
 2. Dopsat zmeny do `<news>` v `plugin.video.ikarus/addon.xml` a pripadne do `plugin.video.ikarus/resources/lib/version_info.py`.
 3. Spustit `ikarus-repo-tools/build_and_upload_repo.cmd`.
+
