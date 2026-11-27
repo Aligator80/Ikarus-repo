@@ -10,9 +10,17 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus.db` - `0.1.29`
+- `plugin.video.ikarus.db` - `0.1.30`
 - `plugin.video.ikarus` - `0.1.24`
 - `repository.ikarus` - `1.0.1`
+
+## Ikarus DB 0.1.30
+
+- Po prehrani filmu a epizody se aktualni nastaveni nacte z nove instance doplnku.
+- Automaticke obnoveni seznamu probiha jen po uspesne synchronizaci historie.
+- Pri chybejicim nastaveni, odhlaseni nebo vypadku zustanou neodeslane udalosti ve fronte, bez konfiguracniho dialogu po prehravani.
+
+[Instalacni balicek Ikarus DB 0.1.30](zips/plugin.video.ikarus.db/plugin.video.ikarus.db-0.1.30.zip)
 
 ## Ikarus DB 0.1.29
 
@@ -258,6 +266,7 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 1. Zvednout verzi v `plugin.video.ikarus/addon.xml`.
 2. Dopsat zmeny do `<news>` v `plugin.video.ikarus/addon.xml` a pripadne do `plugin.video.ikarus/resources/lib/version_info.py`.
 3. Spustit `ikarus-repo-tools/build_and_upload_repo.cmd`.
+
 
 
 
