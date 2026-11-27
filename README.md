@@ -10,9 +10,17 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 
 ## Aktualni verze
 
-- `plugin.video.ikarus.db` - `0.1.28`
+- `plugin.video.ikarus.db` - `0.1.29`
 - `plugin.video.ikarus` - `0.1.24`
 - `repository.ikarus` - `1.0.1`
+
+## Ikarus DB 0.1.29
+
+- Rucni overeni/obnoveni prihlaseni WebShare nejdrive overi ulozenou relaci.
+- Pokud relace funguje, pouzije ji bez zbytecneho noveho prihlaseni; neplatna relace se nadale obnovi.
+- Pri vypadku overeni zustane ulozene prihlaseni zachovane.
+
+[Instalacni balicek Ikarus DB 0.1.29](zips/plugin.video.ikarus.db/plugin.video.ikarus.db-0.1.29.zip)
 
 ## Ikarus DB 0.1.28
 
@@ -250,6 +258,7 @@ https://aligator80.github.io/Ikarus-repo/addons.xml
 1. Zvednout verzi v `plugin.video.ikarus/addon.xml`.
 2. Dopsat zmeny do `<news>` v `plugin.video.ikarus/addon.xml` a pripadne do `plugin.video.ikarus/resources/lib/version_info.py`.
 3. Spustit `ikarus-repo-tools/build_and_upload_repo.cmd`.
+
 
 
 
